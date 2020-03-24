@@ -6,15 +6,18 @@ It uses [Twit](https://github.com/ttezel/twit) and Botometer's [mashape API](htt
 
 ## Install
 
-`npm install node-botometer`
+`npm install node-botometer-rapid-api`
 
 ## Use
 
 ### Setup
+`consumer_key` (string): Twitter API Key
 
-Use app-only keys `consumer_key` (string) and `consumer_secret` (string), and set `app_only_auth` (boolean) to `true` for less restrictive rate limiting from Twitter. User-level tokens `access_token` (string) and `access_token_secret` (string) are allowed but not required or recommended.
+`consumer_secret` (string): Twitter Secret Key
 
-`mashape_key` (string): Get a key from Botometer's [mashape API](https://market.mashape.com/OSoMe/botometer)
+`x_rapid_api_host` (string): X-RapidAPI-Host value, more info: https://rapidapi.com/OSoMe/api/botometer/endpoints
+
+`x_rapid_api_key` (string): X-RapidAPI-Key value, more info: https://rapidapi.com/OSoMe/api/botometer/endpoints
 
 `rate_limit` (integer): In milliseconds. Will apply to any calls to the Twitter or mashape APIs. Default: 0.
 
@@ -32,10 +35,9 @@ const botometer = require('node-botometer');
 const B = new botometer({
   consumer_key: '',
   consumer_secret: '',
-  access_token: null,
-  access_token_secret: null,
+  x_rapid_api_host: '',
+  x_rapid_api_key: '',
   app_only_auth: true,
-  mashape_key: '',
   rate_limit: 0,
   log_progress: true,
   include_user: true,
