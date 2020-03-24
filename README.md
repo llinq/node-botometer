@@ -1,9 +1,5 @@
 # node-botometer-rapid-api
 
-`node-botometer` evaluates Twitter accounts using [Botometer](https://botometer.iuni.iu.edu/#!/), a project by the [Indiana University Network Science Institute](https://iuni.iu.edu/), that "checks the activity of a Twitter account and gives it a score based on how likely the account is to be a bot. Higher scores are more bot-like."
-
-It uses [Twit](https://github.com/ttezel/twit) and Botometer's [mashape API](https://market.mashape.com/OSoMe/botometer). Twitter application and Botometer mashape API keys are required.
-
 ## Install
 
 `npm install node-botometer-rapid-api`
@@ -30,7 +26,7 @@ It uses [Twit](https://github.com/ttezel/twit) and Botometer's [mashape API](htt
 `include_mentions` (boolean): Include the 100 most recent mentions of this user in output object. Default: false.
 
 ```js
-const botometer = require('node-botometer');
+const botometer = require('node-botometer-rapid-api');
 
 const B = new botometer({
   consumer_key: '',
