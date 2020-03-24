@@ -1,4 +1,4 @@
-# node-botometer
+# node-botometer-rapid-api
 
 `node-botometer` evaluates Twitter accounts using [Botometer](https://botometer.iuni.iu.edu/#!/), a project by the [Indiana University Network Science Institute](https://iuni.iu.edu/), that "checks the activity of a Twitter account and gives it a score based on how likely the account is to be a bot. Higher scores are more bot-like."
 
